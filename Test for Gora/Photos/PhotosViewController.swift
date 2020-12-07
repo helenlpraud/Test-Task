@@ -11,12 +11,12 @@ class PhotosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let urlAlbums = "https://jsonplaceholder.typicode.com/albums"
+        let urlPhotos = "https://jsonplaceholder.typicode.com/photos"
     }
 }
 
-let urlAlbums = "https://jsonplaceholder.typicode.com/albums"
 
-let urlPhotos = "https://jsonplaceholder.typicode.com/photos"
 
 struct ResponseAlbums {
     let Result: ResultAlbums

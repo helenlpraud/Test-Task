@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27EBA94257EB20200B2F735 /* Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EBA93257EB20200B2F735 /* Getter.swift */; };
 		E2D1892C257A3E56005643AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1892B257A3E56005643AC /* AppDelegate.swift */; };
 		E2D1892E257A3E56005643AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1892D257A3E56005643AC /* SceneDelegate.swift */; };
 		E2D18930257A3E56005643AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D1892F257A3E56005643AC /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E27EBA93257EB20200B2F735 /* Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Getter.swift; sourceTree = "<group>"; };
 		E2D18928257A3E56005643AC /* Test for Gora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test for Gora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D1892B257A3E56005643AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D1892D257A3E56005643AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E27EBA9D257EB48600B2F735 /* Getting Data */ = {
+			isa = PBXGroup;
+			children = (
+				E27EBA93257EB20200B2F735 /* Getter.swift */,
+			);
+			path = "Getting Data";
+			sourceTree = "<group>";
+		};
 		E2D1891F257A3E56005643AC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				E2D18934257A3E58005643AC /* Assets.xcassets */,
 				E2D18936257A3E58005643AC /* LaunchScreen.storyboard */,
 				E2D18939257A3E58005643AC /* Info.plist */,
+				E27EBA9D257EB48600B2F735 /* Getting Data */,
 			);
 			path = "Test for Gora";
 			sourceTree = "<group>";
@@ -183,6 +194,7 @@
 			files = (
 				E2D18930257A3E56005643AC /* ViewController.swift in Sources */,
 				E2D18945257A3F92005643AC /* PhotosViewController.swift in Sources */,
+				E27EBA94257EB20200B2F735 /* Getter.swift in Sources */,
 				E2D1894B257A3FD0005643AC /* UsersViewController.swift in Sources */,
 				E2D1892C257A3E56005643AC /* AppDelegate.swift in Sources */,
 				E2D1892E257A3E56005643AC /* SceneDelegate.swift in Sources */,

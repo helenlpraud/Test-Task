@@ -14,37 +14,13 @@ class UsersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = "https://jsonplaceholder.typicode.com/users"
-        getData(from: url)
-    }
-    
-    private func getData(from url: String) {
-       let task =  URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
-            guard let data = data, error == nil else {
-            print ("error")
-            return
-        }
-
-        var result: ResponseUsers?
-            do {
-                result = try JSONDecoder().decode(ResponseUsers.self, from: data)
-            }
-            catch {
-                print("failed converted \(error)")
-            }
-            
-        guard result != nil else {
-                return
-            }
-        
-        })
-        
-       task.resume()
+//        getData(from: url)
     }
 }
 
-struct ResponseUsers: Decodable {
-    var results: ResultUsers?
-    var status: String
+class ResponseUser: Decodable {
+    var results: ResultUser? = nil
+    var status: String = ""
 }
 
 struct Geo: Decodable {
@@ -59,11 +35,10 @@ struct Address: Decodable {
     let zipcode: String
 }
 
-struct ResultUsers: Decodable {
-    var id: Int
-    var name: String
-    var username: String
-    var email: String
-    var address: Address?
-    var geo: Geo?
+class ResultUser: Decodable {
+    let name: String
+    let username: String
+    let email: String
+    let address: Address?
+    let geo: Geo?
 }

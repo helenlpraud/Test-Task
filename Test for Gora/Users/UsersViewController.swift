@@ -14,13 +14,11 @@ class UsersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = "https://jsonplaceholder.typicode.com/users"
-//        getData(from: url)
+        let getter = Getter()
+        getter.getData(from: url)
+        let title = getter.users?[0].name
+        print(title ?? "empy")
     }
-}
-
-class ResponseUser: Decodable {
-    var results: ResultUser? = nil
-    var status: String = ""
 }
 
 struct Geo: Decodable {
@@ -35,10 +33,23 @@ struct Address: Decodable {
     let zipcode: String
 }
 
-class ResultUser: Decodable {
+struct Company: Decodable {
+    let name: String
+    let catchPhrase: String
+    let bs: String
+}
+
+class Response: Decodable {
+    let users: [User]
+}
+
+class User: Decodable {
     let name: String
     let username: String
     let email: String
     let address: Address?
     let geo: Geo?
+    let phone: String
+    let website: String
+    let company: Company?
 }

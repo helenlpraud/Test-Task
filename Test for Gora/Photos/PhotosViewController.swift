@@ -16,25 +16,13 @@ class PhotosViewController: UIViewController {
     }
 }
 
-
-
-struct ResponseAlbums {
-    let Result: ResultAlbums
-    let status: String
-}
-
-struct ResultAlbums {
+struct Album {
     let userId: Int
     let id: Int
     let title: String
 }
 
-struct ResponsePhotos {
-    let Result: ResultPhotos
-    let status: String
-}
-
-struct ResultPhotos {
+struct Photo {
     let albumId: Int
     let id: Int
     let title: String
